@@ -1,0 +1,26 @@
+appId: com.gio.nautilus
+productName: Nautilus
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**
+  - resources/**
+  - package.json
+npmRebuild: false
+asarUnpack:
+  - resources/**
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  # instalación por usuario, sin permisos de administrador
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Nautilus
+  uninstallDisplayName: Nautilus

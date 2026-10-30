@@ -1,0 +1,36 @@
+{
+  "name": "nautilus",
+  "productName": "Nautilus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gestor de secretos para Windows: guarda los valores cifrados y los publica como variables de entorno mientras está desbloqueado.",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "icon": "electron build/icono.mjs",
+    "dist": "electron-vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "5.2.5",
+    "koffi": "3.3.5",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "43.7.7",
+    "electron-builder": "26.17.0",
+    "electron-vite": "5.0.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "4.0.18"
+  }
+}

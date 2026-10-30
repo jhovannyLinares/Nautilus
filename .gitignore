@@ -1,0 +1,9 @@
+node_modules/
+out/
+dist/
+.tmp-fixtures/
+*.log
+*.tsbuildinfo
+tests/e2e/capturas/
+backups/
+docs/
